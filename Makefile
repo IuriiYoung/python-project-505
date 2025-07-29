@@ -11,9 +11,6 @@ gendiff:
 	poetry run gendiff
 
 lint:
-	poetry run flake8 gendiff
-
-
-
+	poetry run ruff check
 
 .PHONY: gendiff

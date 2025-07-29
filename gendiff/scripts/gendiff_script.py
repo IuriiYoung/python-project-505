@@ -2,8 +2,8 @@
 
 import json
 
-from gendiff import gendiff
-from gendiff import gendiff_pars
+from gendiff import gendiff, gendiff_pars
+
 
 def start_gendiff():
     args = gendiff_pars.get_args()
@@ -12,7 +12,6 @@ def start_gendiff():
     result = gendiff.gendiff(file_1, file_2)
     print(result)
     
-
 
 def main():
     start_gendiff()
