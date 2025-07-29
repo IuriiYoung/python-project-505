@@ -16,6 +16,5 @@ def gendiff(file_1, file_2):
             else:
                 f_list.append('+ ' + str(key) + ': ' + str(file_2[key]).lower())
     f_string = '{\n  ' + '\n  '.join(f_list) + '\n}'
-    print(f_string)
     return f_string
 
