@@ -19,7 +19,5 @@ def test_gendiff_flat_json():
     dict2 = load_json('file2.json')
     expected = load_text('expected_result.txt')
     result = gendiff(dict1, dict2)
-    print(result)
     assert result == expected
 
-test_gendiff_flat_json()
