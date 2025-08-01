@@ -25,6 +25,9 @@ jobs:
           virtualenvs-in-project: false
           virtualenvs-path: ~/.virtualenvs
           installer-parallel: true
+          
+      - name: Install dependencies
+        run: poetry install --with dev
 
       - name: Run linter
         run: make lint
