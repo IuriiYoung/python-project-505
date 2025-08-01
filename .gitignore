@@ -2,3 +2,7 @@
 __pycache__/
 dist/
 *.__pycache__
+*.pyc
+.coverage
+coverage.xml
+
